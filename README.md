@@ -22,16 +22,16 @@ Marking exams by hand is slow, and online exams make it easy to cheat (open anot
 - **AI question generation.** Describe a topic and let Google Gemini draft questions in bulk, then review before using them.
 - **Exam builder.** Pick a course, set a duration and an availability window, then add questions manually, from the bank, or with AI.
 - **Grading tools.** Lecturers see what is waiting to be graded and can grade answers one by one or in bulk, with a pending-grading counter on the dashboard.
-- **Anti-cheat.** While a student sits an exam it notices tab switching and the window losing focus, blocks copy, paste, right-click and common shortcuts, and logs every violation with a time and severity. Warnings are gentle, not harsh.
+- **Anti-cheat.** While a student sits an exam it notices tab switching and the window losing focus, blocks copy, paste, right-click and common shortcuts, and logs every violation with a time and severity. Warnings are gentle, not harsh. An attempt that broke the rules is marked **Invalidated** with the reason shown (for example a blocked shortcut).
 - **Live monitoring.** Lecturers and admins watch exam sessions and violations as they happen (Socket.IO).
 - **Retake management** and **feedback** from users to admins.
 - **Installable** as an app on a phone (PWA).
 
 ## Screens
 
-| Lecturer: exams | Lecturer: question bank | Lecturer: create exam |
-| --- | --- | --- |
-| <img src="docs/exams.png" alt="Exam list" width="300"> | <img src="docs/question-bank.png" alt="Question bank" width="300"> | <img src="docs/create-exam.png" alt="Create exam" width="300"> |
+| Lecturer: exams | Lecturer: question bank | Lecturer: create exam | Student: exam history |
+| --- | --- | --- | --- |
+| <img src="docs/exams.png" alt="Exam list" width="230"> | <img src="docs/question-bank.png" alt="Question bank" width="230"> | <img src="docs/create-exam.png" alt="Create exam" width="230"> | <img src="docs/exam-history.png" alt="Exam history with invalidated attempts" width="230"> |
 
 ## Built with
 
