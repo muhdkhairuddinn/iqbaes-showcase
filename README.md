@@ -40,7 +40,7 @@ Not an add-on, it is part of how an exam system has to work. The parts that matt
 - **Strict exam rules.** A submission is accepted only from an enrolled student with a running session, inside the exam time, one at a time.
 - **Only the right people can sign up and watch.** Self-registration always creates a student, and live monitoring is for lecturers and admins only.
 - **Controlled AI.** AI calls are limited per user, marks given by the AI are capped at what the question is worth, and the student's text is treated as data, not as instructions.
-- **Cheating and probing are logged**, see the anti-cheat and security log above.
+- **Attacks get noticed.** Failed logins, odd injection-style usernames and cheating attempts land in the admin's system logs with priority, IP address and time. Together with login rate limits and account lockout, probing the system is slow and leaves a trail.
 
 The usual basics are there too (hashed passwords, JWT with a logout that really ends the session, rate limits, input checks), and automated tests cover the rules above.
 
