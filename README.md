@@ -1,6 +1,6 @@
 # IQBAES
 
-**Intelligent Question Bank and Secure Exam System.** My final year project: an online exam platform with a question bank, AI-made questions, grading tools and a built-in anti-cheat watcher.
+**Intelligent Question Bank and Secure Exam System.** My final year project: an online exam platform that mixes two things I enjoy, **AI** (it drafts exam questions) and **cybersecurity** (it watches for cheating and for people poking at the login). It has a question bank, grading tools, an anti-cheat watcher and a security log.
 
 🏆 **Top 4 Best Project at ICT Got Talent 5**, organized by the Faculty of Computing and Multimedia, UPTM. Super happy about this one!
 
@@ -30,6 +30,15 @@ Marking exams by hand is slow, and online exams make it easy to cheat (open anot
 - **Live monitoring.** Lecturers and admins watch exam sessions and violations as they happen (Socket.IO).
 - **Retake management** and **feedback** from users to admins.
 - **Installable** as an app on a phone (PWA).
+
+## Security side
+
+Security is a big part of this project, not an add-on:
+
+- **Anti-cheat for students**: tab switching, copy, paste, right-click and blocked shortcuts are caught and reported to the server, and a student with many violations is auto-flagged.
+- **Security log for admins**: failed logins (including odd, injection-style usernames), violations and admin actions, with priority, IP address and time.
+- **Hardened API**: JWT login, bcrypt password hashing, Helmet security headers, rate limiting (50 login attempts per 15 minutes), input validation, and role checks on the server.
+- **Found and fixed while testing:** a login request with a malformed body used to crash with a server error, and now it is rejected cleanly.
 
 ## Screens
 
