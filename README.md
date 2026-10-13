@@ -38,7 +38,6 @@ Security is a big part of this project, not an add-on:
 - **Anti-cheat for students**: tab switching, copy, paste, right-click and blocked shortcuts are caught and reported to the server, and a student with many violations is auto-flagged.
 - **Security log for admins**: failed logins (including odd, injection-style usernames), violations and admin actions, with priority, IP address and time.
 - **Hardened API**: JWT login, bcrypt password hashing, Helmet security headers, rate limiting (50 login attempts per 15 minutes), input validation, and role checks on the server.
-- **Found and fixed while testing:** a login request with a malformed body used to crash with a server error, and now it is rejected cleanly.
 
 ## Screens
 
