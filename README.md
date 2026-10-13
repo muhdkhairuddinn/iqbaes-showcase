@@ -41,7 +41,7 @@ Security is a big part of this project, not an add-on:
 - **Only the right people can sign up and watch.** Self-registration always creates a student; lecturers and admins are created by an admin. Live monitoring needs a login, and only lecturers and admins can watch exams.
 - **Strict exam rules.** A submission is accepted only from an enrolled student with a running session, inside the exam time, one at a time.
 - **Controlled AI.** AI calls are limited per user, marks given by the AI are capped at what the question is worth, and the student's text is treated as data, not as instructions.
-- **Hardened API**: JWT login with a separate refresh secret, bcrypt password hashing, Helmet security headers, rate limiting (50 login attempts per 15 minutes), input validation, small request-size limits, role checks on the server, and the client IP taken from the trusted proxy only, so it cannot be faked in the logs.
+- **Hardened API**: JWT login with a separate refresh secret that really ends on logout, bcrypt password hashing, Helmet security headers, rate limiting (50 login attempts per 15 minutes), input validation, small request-size limits, role checks on the server, error replies that never reveal internals, and the client IP taken from the trusted proxy only, so it cannot be faked in the logs.
 - **Tested.** Automated tests cover these rules: hidden answers, registration, grading, password reset, and the socket login.
 
 ## Screens
