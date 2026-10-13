@@ -37,7 +37,12 @@ Security is a big part of this project, not an add-on:
 
 - **Anti-cheat for students**: tab switching, copy, paste, right-click and blocked shortcuts are caught and reported to the server, and a student with many violations is auto-flagged.
 - **Security log for admins**: failed logins (including odd, injection-style usernames), violations and admin actions, with priority, IP address and time.
-- **Hardened API**: JWT login, bcrypt password hashing, Helmet security headers, rate limiting (50 login attempts per 15 minutes), input validation, and role checks on the server.
+- **Answers stay on the server.** Students never receive the correct answers. Marking (multiple choice, true or false, and AI-graded short answers) happens on the server.
+- **Only the right people can sign up and watch.** Self-registration always creates a student; lecturers and admins are created by an admin. Live monitoring needs a login, and only lecturers and admins can watch exams.
+- **Strict exam rules.** A submission is accepted only from an enrolled student with a running session, inside the exam time, one at a time.
+- **Controlled AI.** AI calls are limited per user, marks given by the AI are capped at what the question is worth, and the student's text is treated as data, not as instructions.
+- **Hardened API**: JWT login with a separate refresh secret, bcrypt password hashing, Helmet security headers, rate limiting (50 login attempts per 15 minutes), input validation, small request-size limits, role checks on the server, and the client IP taken from the trusted proxy only, so it cannot be faked in the logs.
+- **Tested.** Automated tests cover these rules: hidden answers, registration, grading, password reset, and the socket login.
 
 ## Screens
 
