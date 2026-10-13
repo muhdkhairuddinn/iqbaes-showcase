@@ -29,11 +29,14 @@ Marking exams by hand is slow, and online exams make it easy to cheat (open anot
 
 ## Screens
 
+<p align="center"><img src="docs/exams.png" alt="Lecturer dashboard" width="720"></p>
+<p align="center"><sub>The lecturer dashboard: submissions, pending grading, and the exam list.</sub></p>
+
 | Login | Admin dashboard |
 | --- | --- |
 | <img src="docs/login.png" alt="Login" width="440"> | <img src="docs/admin.png" alt="Admin dashboard" width="440"> |
-| **Lecturer: exams** | **Lecturer: question bank** |
-| <img src="docs/exams.png" alt="Exam list" width="440"> | <img src="docs/question-bank.png" alt="Question bank" width="440"> |
+| **Admin: courses** | **Lecturer: question bank** |
+| <img src="docs/courses.png" alt="Course management" width="440"> | <img src="docs/question-bank.png" alt="Question bank" width="440"> |
 | **Lecturer: create exam** | **Student: exam history** |
 | <img src="docs/create-exam.png" alt="Create exam" width="440"> | <img src="docs/exam-history.png" alt="Exam history with invalidated attempts" width="440"> |
 
