@@ -4,6 +4,8 @@
 
 🏆 **Top 4 Best Project at ICT Got Talent 5**, organized by the Faculty of Computing and Multimedia, UPTM. Super happy about this one!
 
+<p align="center"><img src="docs/login.png" alt="IQBAES login" width="520"></p>
+
 > Showcase repo: notes and screenshots only. The source code is private, it runs on my own machine, and all names, accounts and data in the screenshots are generated demo data.
 
 ## What problem it tackles
@@ -23,22 +25,25 @@ Marking exams by hand is slow, and online exams make it easy to cheat (open anot
 - **Exam builder.** Pick a course, set a duration and an availability window, then add questions manually, from the bank, or with AI.
 - **Grading tools.** Lecturers see what is waiting to be graded and can grade answers one by one or in bulk, with a pending-grading counter on the dashboard.
 - **Anti-cheat.** While a student sits an exam it notices tab switching and the window losing focus, blocks copy, paste, right-click and common shortcuts, and logs every violation with a time and severity. Warnings are gentle, not harsh. An attempt that broke the rules is marked **Invalidated** with the reason shown (for example a blocked shortcut).
+- **Incidents.** A student who breaks the rules is **auto-flagged** and listed with every violation (copy, paste, blocked shortcuts, window switching). The admin can resolve, invalidate the attempt, apply a score penalty, or delete the record.
+- **Security log.** Admins see security events in one place: failed logins (even odd, injection-style usernames), violations and admin actions, each with priority, IP address and time.
 - **Live monitoring.** Lecturers and admins watch exam sessions and violations as they happen (Socket.IO).
 - **Retake management** and **feedback** from users to admins.
 - **Installable** as an app on a phone (PWA).
 
 ## Screens
 
-<p align="center"><img src="docs/exams.png" alt="Lecturer dashboard" width="720"></p>
-<p align="center"><sub>The lecturer dashboard: submissions, pending grading, and the exam list.</sub></p>
+**Lecturers build exams** by hand, from the question bank, or with AI.
 
-| Login | Admin dashboard |
+<p align="center"><img src="docs/create-exam.png" alt="Create exam" width="640"></p>
+
+| A student copies during an exam: alarm | The admin sees the student auto-flagged |
 | --- | --- |
-| <img src="docs/login.png" alt="Login" width="440"> | <img src="docs/admin.png" alt="Admin dashboard" width="440"> |
-| **Admin: courses** | **Lecturer: question bank** |
-| <img src="docs/courses.png" alt="Course management" width="440"> | <img src="docs/question-bank.png" alt="Question bank" width="440"> |
-| **Lecturer: create exam** | **Student: exam history** |
-| <img src="docs/create-exam.png" alt="Create exam" width="440"> | <img src="docs/exam-history.png" alt="Exam history with invalidated attempts" width="440"> |
+| <img src="docs/cheat-alarm.png" alt="Anti-cheat warning during an exam" width="440"> | <img src="docs/incidents.png" alt="Incidents with every violation listed" width="440"> |
+| **Security log: outsider login attempts** | **Exam history: the attempt is invalidated** |
+| <img src="docs/system-logs.png" alt="Security events with high priority failed logins" width="440"> | <img src="docs/exam-history.png" alt="Exam history with invalidated attempts" width="440"> |
+
+> The failed logins in the security log are me probing my own local demo with fake usernames from a placeholder IP address, to show how the system reacts.
 
 ## Built with
 
