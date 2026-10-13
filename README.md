@@ -1,6 +1,8 @@
 # IQBAES
 
-**Intelligent Question Bank & Automated Exam System.** My final year project: an online exam platform with a question bank, AI-made questions, grading tools and a built-in anti-cheat watcher.
+**Intelligent Question Bank and Secure Exam System.** My final year project: an online exam platform with a question bank, AI-made questions, grading tools and a built-in anti-cheat watcher.
+
+🏆 **Top 4 Best Project at ICT Got Talent 5**, organized by the Faculty of Computing and Multimedia, UPTM. Super happy about this one!
 
 <p align="center"><img src="docs/admin.png" alt="Admin dashboard" width="700"></p>
 
