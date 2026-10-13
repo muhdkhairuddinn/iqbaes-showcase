@@ -29,9 +29,11 @@ Marking exams by hand is slow, and online exams make it easy to cheat (open anot
 
 ## Screens
 
-| Lecturer: exams | Lecturer: question bank | Lecturer: create exam | Student: exam history |
-| --- | --- | --- | --- |
-| <img src="docs/exams.png" alt="Exam list" width="230"> | <img src="docs/question-bank.png" alt="Question bank" width="230"> | <img src="docs/create-exam.png" alt="Create exam" width="230"> | <img src="docs/exam-history.png" alt="Exam history with invalidated attempts" width="230"> |
+| Lecturer: exams | Lecturer: question bank |
+| --- | --- |
+| <img src="docs/exams.png" alt="Exam list" width="440"> | <img src="docs/question-bank.png" alt="Question bank" width="440"> |
+| **Lecturer: create exam** | **Student: exam history** |
+| <img src="docs/create-exam.png" alt="Create exam" width="440"> | <img src="docs/exam-history.png" alt="Exam history with invalidated attempts" width="440"> |
 
 ## Built with
 
