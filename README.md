@@ -4,9 +4,7 @@
 
 🏆 **Top 4 Best Project at ICT Got Talent 5**, organized by the Faculty of Computing and Multimedia, UPTM. Super happy about this one!
 
-<p align="center"><img src="docs/admin.png" alt="Admin dashboard" width="700"></p>
-
-> Showcase repo: notes and screenshots only. The source code is private, it runs on my own machine, and all names and data in the screenshots are generated demo data.
+> Showcase repo: notes and screenshots only. The source code is private, it runs on my own machine, and all names, accounts and data in the screenshots are generated demo data.
 
 ## What problem it tackles
 
@@ -31,8 +29,10 @@ Marking exams by hand is slow, and online exams make it easy to cheat (open anot
 
 ## Screens
 
-| Lecturer: exams | Lecturer: question bank |
+| Login | Admin dashboard |
 | --- | --- |
+| <img src="docs/login.png" alt="Login" width="440"> | <img src="docs/admin.png" alt="Admin dashboard" width="440"> |
+| **Lecturer: exams** | **Lecturer: question bank** |
 | <img src="docs/exams.png" alt="Exam list" width="440"> | <img src="docs/question-bank.png" alt="Question bank" width="440"> |
 | **Lecturer: create exam** | **Student: exam history** |
 | <img src="docs/create-exam.png" alt="Create exam" width="440"> | <img src="docs/exam-history.png" alt="Exam history with invalidated attempts" width="440"> |
